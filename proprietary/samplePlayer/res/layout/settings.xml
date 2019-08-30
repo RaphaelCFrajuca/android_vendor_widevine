@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:background="@drawable/background3">
+
+    <TableRow >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:text="@string/drm_server"/>
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/drm_server"
+             />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:text="@string/device_id"/>
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/device_id"
+           />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:text="@string/portal_id"/>
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/portal_id"
+               />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:text="@string/content_page"/>
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/content_page"
+               />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <Button
+            android:text="@string/update_button"
+            android:id="@+id/update_button"
+        />
+    </TableRow>
+</TableLayout>

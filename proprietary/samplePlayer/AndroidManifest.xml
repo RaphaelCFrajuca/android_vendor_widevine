@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.widevine.demo"
+>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-sdk android:minSdkVersion="12"></uses-sdk>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.NoActionBar">
+        <activity android:name=".WidevineSamplePlayer"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoPlayerView"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+               <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".StreamingActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+               <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DownloadActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+               <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SettingsActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+               <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

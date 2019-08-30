@@ -1,0 +1,45 @@
+README: WidevineSamplePlayer.apk
+
+[Install application:]
+
+Attach a device
+In a terminal window:
+change directory to vendor/widevine/proprietary/samplePlayer
+type the following commands:
+mm
+adb root
+adb remount
+adb sync
+adb reboot
+
+demo is installed to out/target/product/stingray/system/app/WidevineSamplePlayer.apk
+
+
+[Download content for offline testing:]
+
+View http://seawwws001.shibboleth.tv/android/oem.html source for asset names.
+
+For example:
+
+curl -sL "http://seawwws001.cdn.shibboleth.tv/videos/content/starz_demo_ffmpeg_hc_single_720p.wvm" -O
+adb shell mkdir -p /sdcard/Widevine
+adb push starz_demo_ffmpeg_hc_single_720p.wvm /sdcard/Widevine/
+
+
+[Running the application:]
+
+On your device, open WidevineDemo.
+The Streaming tab should be highlighted, with content available in 480p and 720p encodings.
+Select an asset to play.
+You should see a player page. To successfully play back content:
+-Select Acquire Rights
+-Select Play (or click the player window to start playback)
+
+Selecting Show Rights will provide the license time left for playback in the log screen next to the player.
+Selecting Remove Rights will stop further attempts to play back from succeeding for more than 10 seconds. You will need to then select Acquire Rights to allow playback again.
+
+Stop video, and go back one screen to the video list.
+Select the Downloads tab.
+You should see the video we pushed to the device (starz_demo_ffmpeg_hc_single_720p.wvm).
+Behavior on this page should be the same as for the Streaming page, with the exception that once you Acquire Rights, you should be able to continue playback of the Downloaded asset offline as long as the rights are valid. You can check the status of your rights with the Show Rights button.
+

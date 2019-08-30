@@ -1,0 +1,34 @@
+URL: https://code.google.com/p/googlemock/downloads/list
+Version: 1.6.0
+License: New BSD License
+
+Description:
+Google's framework for writing and using C++ mock classes on a variety of
+platforms (Linux, Mac OS X, Windows, Windows CE, Symbian, etc). Inspired by
+jMock, EasyMock, and Hamcrest, and designed with C++'s specifics in mind, it can
+help you derive better designs of your system and write better tests.
+
+While gMock supports building with the Android NDK out-of-the-box, it needs some
+small modifications to build as part of the Android OS build.  Specifically, it
+needs a different format of build script, and it needs to build against the OS'
+modified version of gTest, rather than the packaged version.
+
+Local Modifications:
+Mon Mar 4, 2013 (juce)
+
+Added this documentation
+
+Added Android.mk and src/Android.mk files
+
+Excluded the following files from being copied to Android repo:
+  Makefile.in
+  Makefile.am
+  aclocal.m4
+  CMakeLists.txt
+  configure
+  configure.ac
+  build-aux/
+  make/
+  msvc/
+  fused-src/
+  gtest/

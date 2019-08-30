@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Widevine Demo</string>
+    <string name="no_content">No Content Found</string>
+    <string name="not_provisioned">Device Not Provisioned</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="mediacodec_mode">MediaCodec Mode</string>
+    <string name="normal_mode">Normal Mode</string>
+    <string name="constraints">Constraints</string>
+    <string name="acquire_rights">Acquire Rights</string>
+    <string name="remove_rights">Remove Rights</string>
+    <string name="show_rights">Show Rights</string>
+    <string name="streaming">Streaming</string>
+    <string name="downloads">Downloads</string>
+
+    <string name="content_page">Content Page</string>
+    <string name="device_id">Device Id</string>
+    <string name="drm_server">Drm Server</string>
+    <string name="portal_id">Portal Name</string>
+    <string name="update_button">Update Button</string>
+</resources>

@@ -1,0 +1,30 @@
+URL: https://code.google.com/p/stringencoders/
+Version: v3.10.3
+License: BSD
+License File: LICENSE
+
+Description:
+This directory contains open source code for modp base64 encode and decode
+functions from https://code.google.com/p/stringencoders/.
+
+Local Modifications:
+Comment out #include "config.h" in modep_b64.cpp
+
+Additional Notes:
+Note that the directory structure in third_party/stringencoders mirrors that of
+stringencoders-v3.10.3, therefore, the include files are placed in ./src
+instead of ./include.
+
+The following instructions demonstrate how modp_b64_data.h is generated.
+modp_b64_data.h contains conversion tables to generate web safe encoded
+base64 strings.
+
+  1. navigate to https://code.google.com/p/stringencoders
+  2. download stringencoders-v3.10.3.tar.gz from the "Downloads" tab
+  3. extract source to a working folder
+  4. change into stringencoders-v3.10.3/ directory
+  5. ./configure --with-b64w-chars='-_='
+  6. make
+  7. now copy modp_b64w_data.h to third_party/stringencoders/src/.
+  8. copy src/modp_b64w.c to third_party/stringencoders/src/*.cpp
+  9. copy src/modp_b64w.h to third_party/stringencoders/src/.
